@@ -32,6 +32,7 @@ Here is our LeapDoodle's feature that we are pround of.
 ## Build Instructions
 - Since this is my first time working with actual hardware, I realize that a lot have to factors in to be able to make the program run smoothly, so please forgive my really long build instruction.
 - You will also need a leap-motion controller
+- Make sure you have the [Leap Motion SDK](https://leap2.ultraleap.com/downloads/leap-motion-controller/) downloaded
 
 1. Clone our git repository: https://github.com/qvd808/stormhack-2024
 2. Run
