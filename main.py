@@ -4,7 +4,7 @@ import pygame, sys
 FPS = 45 
 fpsClock = pygame.time.Clock()
 WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 600
+WINDOW_HEIGHT = 500
 BACK_GROUND = (0, 0, 0)
 
 pygame.init()
