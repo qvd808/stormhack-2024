@@ -3,8 +3,8 @@ import pygame, sys
 
 FPS = 60
 fpsClock = pygame.time.Clock()
-WINDOW_WIDTH = 400
-WINDOW_HEIGHT = 300
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
 BACK_GROUND = (0, 0, 0)
 
 pygame.init()
