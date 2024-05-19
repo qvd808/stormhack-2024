@@ -27,6 +27,7 @@ class MyListener(leap.Listener):
 
         self.should_draw = False
         self.should_erase = False
+        self.radius = 1 
 
     def on_connection_event(self, event):
         print("Connected")
@@ -48,15 +49,14 @@ class MyListener(leap.Listener):
                 self.palm_right_y = hand.palm.position.y
                 self.palm_right_z = hand.palm.position.z
 
+                self.radius = int(hand.pinch_distance//5)
+                print(self.radius)
+
             else:
                 self.palm_left_x = hand.palm.position.x
                 self.palm_left_y = hand.palm.position.y
                 self.palm_left_z = hand.palm.position.z
 
-                # if hand.pinch_distance > 20:
-                #     self.should_draw = False
-                # else:
-                #     self.should_draw = True
 
                 if hand.thumb.distal.prev_joint.z - hand.middle.distal.prev_joint.z <= 48:
                     self.should_erase = True
@@ -108,15 +108,15 @@ def main():
 
             if my_listener.should_draw:
                 if my_listener.should_erase:
-                    pygame.draw.circle(WIN, (255, 255, 255), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], 10, 1)
+                    pygame.draw.circle(WIN, (255, 255, 255), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], my_listener.radius * 1.6, 1)
                 else:
-                    pygame.draw.circle(WIN, (255, 255, 255), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], 4)
+                    pygame.draw.circle(WIN, (255, 255, 255), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], my_listener.radius)
 
             pygame.display.update()
             fpsClock.tick(FPS)
 
             if my_listener.should_erase:
-                pygame.draw.circle(WIN, (BACK_GROUND), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], 10)
+                pygame.draw.circle(WIN, (BACK_GROUND), [WINDOW_WIDTH//2 + rx, WINDOW_HEIGHT//2 + rz], my_listener.radius * 1.7)
 
 if __name__ == "__main__":
     main()
