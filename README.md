@@ -3,7 +3,7 @@ This is a project created for StormHacks 2024
 
 ## Inspiration
 
-Thanks to Major Leauge Hacking, I was able to borrowed a Leap motion during the hackathon. Therefore, I decided to learn how to use these leap motion and this is what I come up with: Drawing using your hand motion. LeapDoodle :)
+Thanks to Major Leauge Hacking, our team were able to borrowed a Leap motion during the hackathon. Therefore, we decided to learn how to use these leap motion and this is what our team has came up with: Drawing using your hand motion. LeapDoodle :)
 
 ## What it does
 Have you ever used Microsoft Paint? Have you ever experince the non-usefulness of not able to draw correctly using your mouse? I am horner to present you LeapDoodle, A drawing app using your hand :)
@@ -15,7 +15,7 @@ Here is our LeapDoodle's feature that we are pround of.
 - ✅ If you are someone who seek hardship in the creation of art, this is for you :)
 
 ## How we built it
-- The Leap motion I used for this hackathon used Ultra Leap, which use C as the backend. I used their API [leapc-python-bindings](https://github.com/ultraleap/leapc-python-bindings) to calls the backend. Then I run a pygame window which display the logic when user interact with the app. This was run on python 3.11
+- The Leap motion I used for this hackathon used Ultra Leap, which use C as the backend. we used their API [leapc-python-bindings](https://github.com/ultraleap/leapc-python-bindings) to calls the backend. Then, we run a pygame window which display the logic when user interact with the app. This was run on python 3.11
 
 
 ## What we learned
@@ -31,6 +31,7 @@ Here is our LeapDoodle's feature that we are pround of.
 
 ## Build Instructions
 - Since this is my first time working with actual hardware, I realize that a lot have to factors in to be able to make the program run smoothly, so please forgive my really long build instruction.
+- You will also need a leap-motion controller
 
 1. Clone our git repository: https://github.com/qvd808/stormhack-2024
 2. Run
@@ -48,3 +49,7 @@ pip install -e leapc-python-api
 ```
 python main.py
 ```
+
+## How to draw
+- Use your right hand to draw. If you pinch your right hand, the circle will get smaller, and the line you draw will have a smaller width. If your index finger is far from your thumb, the circle will get bigger.
+- To start drawing, pinch your index finger and thumb together. To enter erase mode, pinch your index, middle finger, and thumb together. The radius of the circle will increase based on how you pinch with your right hand.
