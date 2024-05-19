@@ -1,7 +1,7 @@
 import leap
 import pygame, sys
 
-FPS = 60
+FPS = 45 
 fpsClock = pygame.time.Clock()
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
