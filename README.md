@@ -23,7 +23,7 @@ Here is our LeapDoodle's feature that we are pround of.
 - The struggle when working with hardware. There is a lot going under the hood to make every works perfectly the way it is. Through this project, We feel more like we still have things to learn if we want to work with hardware in the future.
 
 ## Challenges we ran into
-- One of the biggest challenges in this hackathon is time. We must deliver a Minimum Viable Product within a 24-hour period. There is so much more that I want to implement for the app, but I must work on a functioning product first. If I have time in the future, I want to implement more so it can function like a full Microsoft Paint.
+- One of the biggest challenges in this hackathon is time. We must deliver a funtional product within a 24-hour period. There is so much more that I want to implement for the app, but I must work on a functioning product first. If I have time in the future, I want to implement more so it can function like a full Microsoft Paint.
 
 ## Accomplishments that we're proud of
 - Connect to a Leap motion controller and record data
